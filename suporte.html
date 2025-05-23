@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <h1>Formulário Para Contato com o Suporte Técnico</h1>
+    <form action="">
+        <!-- Nome -->
+         <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome">
+         </div>
+        <!-- Telefone -->
+         <div id="telefone">
+            <label for="telefone">Telefone</label>
+            <input type="number" name="telefone">
+         </div>
+        <!-- qual o problema -->
+         <div>
+           <label for="problema">Qual o seu problema?</label>
+           <select name="problema" id="problema">
+            <option value="critica_construtiva">Critica Construtiva</option>
+            <option value="defeito_no_site">Defeito no site</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value=""></option>
+            <option value=""></option>
+           </select>
+         </div>
+        <!-- Descrição -->
+         <div id="descricao">
+            <label for="descricao"></label>
+            <textarea name="descricao" id="descricao" cols="50">Descreva mais sobre o motivo de você está entrando em contato.</textarea>
+         </div>
+        <!-- #region -->
+         <div id="submit">
+            <input type="submit" value="submit">
+         </div>
+    </form>
+</body>
+</html>
