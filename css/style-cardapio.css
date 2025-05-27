@@ -1,8 +1,73 @@
+/*Todo o site*/
 *{
     margin: 0;
     padding: 0;
 }
+/*CABEÇALHO*/
+header{
+    background-color: rgb(77, 77, 77);
+    display: flex;
+    align-items: center; /*Centralizando eles na vertical*/
+    justify-content: space-between; /*Deixando os elementos no centro*/
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}
+.menu button{
+    border-radius: 20px;
+    width: 5dvw;
+    height: 3dvh;
+}
+#logo{
+    width: 50px;
+}
+/*Apenas imagens*/
 img{
     width: 200px;
     border-radius: 30px;
+}
+/*Apenas os botões do menu*/
+.menu button{
+    width: 5dvw;
+    height: 4dvh;
+    border-radius: 20px;
+}
+.menu button:hover{
+    background-color: blueviolet;
+    width: 6dvw;
+    height: 5dvh;
+}
+/*Tudo que faz parte do corpo do cardápio*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+/*Apenas os botões do Main*/
+main button{
+    width: 10dvw;
+    height: 6dvh;
+    border-radius: 20px;
+    background: none;
+    background-color: transparent;
+    background-color: none;
+}
+main button:hover{
+    background-color: blueviolet;
+    width: 11dvw;
+    height: 7dvh;
+}
+/*Todas as divs com os elementos das comidas*/
+.comida{
+    display: flex;
+    flex-direction: column; /*Definindo a direção*/
+    height: 45vh; /*Definindo uma altura*/
+    align-items: center; /*Centralizando eles no meio*/
+    flex: 1 1 calc(33.333% - 20px); /* 3 itens por linha considerando o gap */
+    min-width: 200px; /* Largura mínima para cada item */
 }
